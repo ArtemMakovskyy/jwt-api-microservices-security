@@ -1,0 +1,20 @@
+services:
+
+  mysql-sec-swiggy-net:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: rootPassword
+      MYSQL_DATABASE: javatechie
+      MYSQL_USER: bestuser
+      MYSQL_PASSWORD: secretPassword
+    ports:
+      - "3311:3306"
+    restart: unless-stopped
+    networks:
+      - sec-swiggy-net
+
+
+networks:
+  sec-swiggy-net:
+    driver: bridge
+

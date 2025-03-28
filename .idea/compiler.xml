@@ -8,18 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="restaurant-service" />
+        <module name="identity-service" />
         <module name="discovery" />
         <module name="gateway" />
         <module name="restaurant-app" />
-      </profile>
-      <profile name="Annotation profile for identity-service" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
-        </processorPath>
-        <module name="identity-service" />
       </profile>
     </annotationProcessing>
   </component>
