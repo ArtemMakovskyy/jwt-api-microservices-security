@@ -18,3 +18,8 @@
 /discovery/.gitattributes
 /discovery/.mvn/
 /discovery/.idea/
+/identity-service/mvnw.cmd
+/identity-service/mvnw
+/identity-service/.gitattributes
+/identity-service/.mvn/
+/identity-service/.idea/
