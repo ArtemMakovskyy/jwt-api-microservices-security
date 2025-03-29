@@ -20,12 +20,16 @@ spring:
 #          uri: http://localhost:8082
           predicates:
             - Path=/restaurant/**
+          filters:
+            - AuthenticationFilter
 
         - id: restaurant-app
           uri: lb://RESTAURANT-APP
 #          uri: http://localhost:8081
           predicates:
             - Path=/swiggy/**
+          filters:
+            - AuthenticationFilter
 
         - id: identity-service
           uri: lb://IDENTITY-SERVICE
